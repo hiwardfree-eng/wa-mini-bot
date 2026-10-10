@@ -1,0 +1,27 @@
+{
+  "name": "wa-mini-bot",
+  "version": "1.0.0",
+  "description": "WhatsApp mini bot open source — Baileys, anti-detección Mac, reconexión automática, owner auto-detect (rango DIOS)",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "baileys",
+    "wa",
+    "open-source"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@whiskeysockets/baileys": "7.0.0-rc14",
+    "dotenv": "^16.4.5",
+    "pino": "^9.4.0",
+    "qrcode-terminal": "^0.12.0"
+  }
+}

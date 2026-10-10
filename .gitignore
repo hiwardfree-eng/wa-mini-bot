@@ -1,0 +1,12 @@
+# dependencias
+node_modules/
+
+# sesión de WhatsApp (¡nunca subir esto!)
+auth/
+
+# secretos y datos locales
+.env
+data/
+tmp/
+qr.txt
+*.log
