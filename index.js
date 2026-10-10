@@ -27,7 +27,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 // ─── CONFIG ─────────────────────────────────────────────────────────
 const PREFIX = process.env.PREFIX || '.';
 const OWNER_NUMBER = (process.env.OWNER_NUMBER || '').replace(/\D/g, '');
-const REPO_URL = process.env.REPO_URL || 'https://github.com/<tu-usuario>/wa-mini-bot';
+const REPO_URL = process.env.REPO_URL || 'https://github.com/hiwardfree-eng/wa-mini-bot';
 const AUTH_DIR = join(__dirname, 'auth');
 const DATA_DIR = join(__dirname, 'data');
 const TMP_DIR = join(__dirname, 'tmp');
@@ -298,7 +298,7 @@ async function handleMessage(msg) {
 
     case 'git':
     case 'repo':
-      return reply('📦 Repo: https://github.com/tilinx-lab/wa-mini-bot\n(Súbelo con tu propia cuenta)');
+      return reply(`📦 Repo: ${REPO_URL}`);
 
     // ─── calculadora segura (solo expresiones, sin eval de código) ───
     case 'calc': {
